@@ -1,6 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- Add ruby image in front of page title -->
+  <link rel="shortcut icon" href="ruby.jpg" type="image/jpg">
   <title>Omnicalc</title>
 
   <!-- Connect to Bootstrap CSS -->
@@ -22,8 +26,120 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Show borders -->
+   <style>
+      * {
+  /*      vertical-align: top;
+        border: thin red solid;
+  */    }
+    </style>
+
 </head>
 <body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Add calculator icone and text to nav bar-->
+      <a class="navbar-brand" href="#">
+        <span class="fa fa-calculator" href="#">
+        </span>
+      Omnicalc
+      </a>
+
+    </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="/word_count/" class="list-group-item">
+            <span class="fa fa-book"></span>
+            Word Count
+          </a>
+
+          <a href="/loan_payment/" class="list-group-item">
+            <span class="fa fa-money"></span>
+            Loan Payment
+          </a>
+
+          <a href="/time_between/" class="list-group-item">
+            <span class="fa fa-clock-o"></span>
+            Time Between
+          </a>
+
+          <a href="/descriptive_statistics/" class="list-group-item">
+            <span class="fa fa-bar-chart"></span>
+            Descriptive Statistics
+          </a>
+
+        </div>
+      </div>
+
+      <div class="col-md-9">
+
+<!--Right hand-side panel  -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">New Word Count Calculation</h3>
+          </div>
+
+          <div class="panel-body">
+
+            <!-- Form, including text fields and button -->
+            <form class="form-horizontal">
+
+              <!-- Form element - text -->
+              <div class="form-group">
+                <label for="text" class="col-sm-2 control-label">Text</label>
+
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="3" placeholder="Enter your text" id="user_text"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Form element - text -->
+              <div class="form-group">
+                <label for="text" class="col-sm-2 control-label">
+                Special Word
+                (optional)
+                </label>
+
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="1" placeholder="Enter a word to count the occurrences of" id="user_text_2"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Form element - button -->
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
 
 </body>
 </html>
